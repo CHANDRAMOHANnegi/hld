@@ -1,0 +1,35 @@
+.container {
+  margin-top: 800px;
+  transform: rotate(90deg);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hand {
+  height: 5px;
+  background-color: red;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.min-h {
+  background: linear-gradient(to right, blue 50%, transparent 50%);
+}
+
+.sec-h {
+  background: linear-gradient(to right, red 50%, transparent 50%);
+}
+
+.hour-h {
+  background: linear-gradient(to right, green 50%, transparent 50%);
+  transform: translate(50%, 50%);
+  z-index: 10;
+}
