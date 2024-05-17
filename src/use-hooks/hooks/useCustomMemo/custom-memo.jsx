@@ -13,13 +13,23 @@ export const CustomMemo = () => {
   const memoisedSquaredValue = useCustomMemo(squaredValue, [counter]);
 
   return (
-    <div className="App">
+    <>
       <h2>Counter: </h2>
       <h2>Squared Counter: {memoisedSquaredValue}</h2>
-      <button onClick={() => setCounter(counter + 1)}>Increment</button>
+      <button
+        className=" bg-sky-500 hover:bg-sky-700"
+        onClick={() => setCounter(counter + 1)}
+      >
+        Increment
+      </button>
       <h2>Counter 2: {counter2}</h2>
-      <button onClick={() => setCounter2(counter2 - 1)}>Decrement</button>
-    </div>
+      <button
+        className=" bg-sky-500 hover:bg-sky-700"
+        onClick={() => setCounter2(counter2 - 1)}
+      >
+        Decrement
+      </button>
+    </>
   );
 };
 

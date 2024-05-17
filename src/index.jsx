@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import counterReducer from "./counter/counterStore";
 import App from "./App";
 import "./index.css";
+import "./styles.css";
 import { combineReducers, createStore, Provider } from "./libs/custom-redux";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
