@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useToggle } from "../hooks/useToggle";
+import { useToggle } from "../use-hooks/hooks/useToggle/useToggle";
 import "./style.css";
 
 const initGrid = [
@@ -117,15 +117,13 @@ export const TicTacToe = () => {
       <div className="container" onClick={handleClick}>
         {grid.map((row, idx) => {
           return (
-            <>
-              <div className="row" data-row={idx} key={idx}>
-                {row.map((col, jdx) => (
-                  <span key={jdx} data-pos={`${idx},${jdx}`}>
-                    {col}
-                  </span>
-                ))}
-              </div>
-            </>
+            <div className="row" data-row={idx} key={idx}>
+              {row.map((col, jdx) => (
+                <span key={jdx} data-pos={`${idx},${jdx}`}>
+                  {col}
+                </span>
+              ))}
+            </div>
           );
         })}
       </div>
